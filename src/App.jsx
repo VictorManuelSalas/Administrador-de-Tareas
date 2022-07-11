@@ -1,4 +1,5 @@
 import Header from "./componentes/Header"
+import Tareas from "./componentes/Tareas"
 
 function App() {
  //Los componentes se crean siempre con mayuscula la primera letra
@@ -11,6 +12,7 @@ function App() {
     </>*/ 
     <div className="container">
       <Header titulo='Administrador de Tareas' />
+      <Tareas />
     </div>
   )
 }

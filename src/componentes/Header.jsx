@@ -31,8 +31,7 @@ const Header = (props) => {
        <header className='header'>
             <h2>{props.titulo}</h2>
             <Boton color='green' text='Nueva' />
-            <Boton color='red' text='Borrar' />
-       </header>
+            </header>
     )
 }
 

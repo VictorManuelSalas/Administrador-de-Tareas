@@ -21,7 +21,9 @@ const tareas = [
 
 const Tareas = () => {
   return (
-    <div>Tareas</div>
+    <>
+     {tareas.map((tarea)=>(<h3 key={tarea.id}>{tarea.texto}</h3>))}
+    </>
   )
 }
 
