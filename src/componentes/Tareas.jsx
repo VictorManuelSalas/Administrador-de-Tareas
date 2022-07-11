@@ -21,6 +21,7 @@ const tareas = [
 
 const Tareas = () => {
   return (
+    //En palabras sencillas, al utilizar map(), podremos convertir un array en uno nuevo, cuyos valores serán una transformación del primero. Dicha transformación será efectuada por la función que se utilice en este proceso.
     <>
      {tareas.map((tarea)=>(<h3 key={tarea.id}>{tarea.texto}</h3>))}
     </>
