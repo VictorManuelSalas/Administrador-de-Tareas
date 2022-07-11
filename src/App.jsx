@@ -1,44 +1,15 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import Header from "./componentes/Header"
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ //Los componentes se crean siempre con mayuscula la primera letra
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    //Aqui se agragaran todos los componentes para que se muestren en la pagina
+    //Los omponentes se mandan a hablar como se muestra el Header y los props se hacen,
+    //poniendo un nombre y darle un valor entre comillas simples.
+    
+    <>
+      <Header titulo='hola soy un prop y fui creado por' nombre='Victor' edad={22} />
+    </>
   )
 }
 
