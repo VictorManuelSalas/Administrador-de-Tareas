@@ -42,7 +42,7 @@ function App() {
     </>*/
     <div className="container">
       <Header titulo='Administrador de Tareas' />
-      {tareas.length > 0 ? (<Tareas tareas={tareas} onDelete={deleteTarea} onToggle={toggleTerminado} />) : ('No hay Tareas para mostrar')}
+      {tareas.length > 0 ? (<Tareas tareas={tareas} onDelete={deleteTarea}  />) : ('No hay Tareas para mostrar')}
     </div>
     )
 }
