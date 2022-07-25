@@ -28,8 +28,9 @@ function App() {
   //Funcion para eliminar una tarea al dar clic a la x
   //Esta funicon obtiene el valor de id
   const deleteTarea = (id) => {
-    console.log('borrar', id)
-  }
+    //Esto es porque no se puede leiminar datos que nosotros tenemos en el code 
+    setTareas(tareas.filter((tarea) => tarea.id !== id))
+  }//Esto va filtrar las tareas que son diferentes al id que se ando
 
   //Los componentes se crean siempre con mayuscula la primera letra
   return (
@@ -41,11 +42,12 @@ function App() {
     </>*/
     <div className="container">
       <Header titulo='Administrador de Tareas' />
-      <Tareas tareas={tareas} onDelete={deleteTarea} />
+      {tareas.length > 0 ? (<Tareas tareas={tareas} onDelete={deleteTarea} onToggle={toggleTerminado} />) : ('No hay Tareas para mostrar')}
     </div>
-    //En Tareas se mandan todos los datos de la bd mediante esa forma que se muetra en la etiqueta de Tarea
-//TAMBIEN SE LE PASA LA FUNCION deleteTareas mediante un atributo onDelete
-  )
+    )
 }
-
+ /*Ahi se declara una condicion el cual dice que si  la longitud de la tarea es mayor a 0 que muestre las tareas sino que muestre el texto
+    En Tareas se mandan todos los datos de la bd mediante esa forma que se muetra en la etiqueta de Tarea
+    TAMBIEN SE LE PASA LA FUNCION deleteTareas mediante un atributo onDelete */
+ 
 export default App
