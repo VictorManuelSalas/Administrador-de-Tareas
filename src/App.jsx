@@ -9,34 +9,20 @@ function App() {
   const [showAddTarea, setShowAddTarea] = useState(false)
 
   //Los estados se definen con un arreglo que tiene el nombre del estado y su seter
-  const [tareas, setTareas] = useState([
-    {
-      id: 1,
-      texto: 'Ir al doctor',
-      fecha: '5 de Julio del 2022',
-      terminada: true,
-    },
-    {
-      id: 2,
-      texto: 'Ir al cine',
-      fecha: '15 de Julio del 2022',
-      terminada: false,
-    },
-    {
-      id: 3,
-      texto: 'Ir al teibol',
-      fecha: '25 de Julio del 2022',
-      terminada: false,
-    }
-  ]);
+  //Aqui se almacenaran todas las tareas con su nombre, fecha, id y estatus(terminado / pendiente)
+  const [tareas, setTareas] = useState([]);
+
   //Agregar Tarea
   const addTarea = (tarea) => {
     //Se genere un id nuevo, que se genera un numero grande pa no repetirse
     const id = Math.floor(Math.random() * 10000) + 1
+    
     //Este genera la nueva tarea dandole el nuevo id y agregandole todos los datos que se obtienen de la variable tarea
     const nuevaTarea = { id, ...tarea }
     //Se mete a la base con setTareas, se le pasan las tareas existentes y la nueva que se creo
     setTareas([...tareas, nuevaTarea])
+    console.log(id)
+
   }
 
   //Funcion para eliminar una tarea al dar clic a la x
