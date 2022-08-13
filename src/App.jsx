@@ -34,7 +34,8 @@ function App() {
 
   //Toggle terminado
   const toggleTerminado = (id) => {
-
+    //El map ara un recorido por todos y preguntara que si el id es igual a el id de alguna tarea y al ser match entonces hagarra y cambia el valor bolueano
+    setTareas(tareas.map((tarea) => tarea.id === id ? {...tarea, terminada: !tarea.terminada }: tarea ))
   }
   //Los componentes se crean siempre con mayuscula la primera letra
   return (
