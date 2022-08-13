@@ -18,7 +18,7 @@ const estilos = {
 import Boton from "./Boton"
 //Hay dos formas de llamar a los props, una es poniendo en la funcion en sus () el elemento destructurando entre llaves
 //por ejemplo, const Header = ({titulo}) =>. Y en el h1 ya no abra necesidad de poner el {props.} solo quedaria como {titulo}
-const Header = (props) => {
+const Header = ({ titulo, onAdd, showAdd }) => {
 
 
     return (
@@ -29,8 +29,8 @@ const Header = (props) => {
         </>
         */
        <header className='header'>
-            <h2>{props.titulo}</h2>
-            <Boton color='green' text='Nueva' />
+            <h2>{titulo}</h2>
+            <Boton color={showAdd ? 'red' : 'green'} text={showAdd ? 'Cerrar' : 'Nueva'} onClick={onAdd}/>
             </header>
     )
 }

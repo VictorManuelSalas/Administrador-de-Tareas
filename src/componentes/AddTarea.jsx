@@ -18,7 +18,7 @@ const AddTarea = ( { onAdd } ) => {
         e.preventDefault()
 
         if(!texto){
-            return alert('Por favor ingres el texto')
+            return alert('Por favor ingrese los datos')
         }
 
         //Se le pasan los datos estructurados al atributo onAdd o el prop recibido de app.jsx

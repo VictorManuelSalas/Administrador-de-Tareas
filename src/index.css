@@ -27,7 +27,6 @@ border-radius: 2rem;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
   padding: 30px;
   border-radius: 2rem;
   background-color: white;
@@ -72,7 +71,11 @@ border-radius: 2rem;
   display: block;
   width: 100%;
 }
-
+.taskcontainer{
+  display: block;
+  height: 40vh;
+  overflow-y: scroll;
+}
 .task {
   background: #f4f4f4;
   margin: 5px;
@@ -128,4 +131,19 @@ border-radius: 2rem;
 footer {
   margin-top: 30px;
   text-align: center;
+}
+.sinTarea{
+  display: flex;
+  flex-direction: column;
+}
+.sinTarea p{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+}
+.sinTarea img{
+  margin: auto;
+  width: 200px;
+  height: 200px;
 }

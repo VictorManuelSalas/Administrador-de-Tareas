@@ -8,6 +8,7 @@ const Tarea = ({ tarea, onDelete, onToggle }) => {
         //Y se le pasa a la funcion onDelete el atributo id
         //En class name se agrega el codigo entre la comillas invertidas, se pasa la clase task y pregunta que 
         //si TAREA.TERMINADA ES TRUE entonces que ponga la clase terminado y si no qeu no ponga nada
+        
         <div className={`task ${tarea.terminada ? 'terminado' : ' '}`} onDoubleClick={() => onToggle(tarea.id)}>
             <h3>{tarea.texto} <FaTimes onClick={() => onDelete(tarea.id) } style={{color: 'red', cursor: 'pointer'}}/></h3>
             <p>{tarea.fecha}</p>
