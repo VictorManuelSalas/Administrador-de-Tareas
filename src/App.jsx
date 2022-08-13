@@ -27,7 +27,12 @@ function App() {
   ]);
   //Agregar Tarea
   const addTarea = (tarea) => {
-
+    //Se genere un id nuevo, que se genera un numero grande pa no repetirse
+    const id = Math.floor(Math.random() * 10000) + 1
+    //Este genera la nueva tarea dandole el nuevo id y agregandole todos los datos que se obtienen de la variable tarea
+    const nuevaTarea = {id, ...tarea}
+    //Se mete a la base con setTareas, se le pasan las tareas existentes y la nueva que se creo
+    setTareas([...tareas, nuevaTarea])
   }
 
   //Funcion para eliminar una tarea al dar clic a la x
