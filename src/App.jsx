@@ -1,5 +1,6 @@
 import Header from "./componentes/Header"
 import Tareas from "./componentes/Tareas"
+import AddTarea from "./componentes/AddTarea"
 import { useState } from 'react'
 
 function App() {
@@ -23,7 +24,11 @@ function App() {
       fecha: '25 de Julio del 2022',
       terminada: false,
     }
-  ])
+  ]);
+  //Agregar Tarea
+  const addTarea = (tarea) => {
+
+  }
 
   //Funcion para eliminar una tarea al dar clic a la x
   //Esta funicon obtiene el valor de id
@@ -34,7 +39,8 @@ function App() {
 
   //Toggle terminado
   const toggleTerminado = (id) => {
-    //El map ara un recorido por todos y preguntara que si el id es igual a el id de alguna tarea y al ser match entonces hagarra y cambia el valor bolueano
+    //El map ara un recorido por todos y preguntara que si el id es igual a el id de alguna tarea y al ser match entonces le ase una copia de las base 
+    //y a la propiedad terminada que tiene el objeto, lo cambiara su valor que tiene actualmente por un diferente con el ! y sino es el id igual entonces no hace nada 
     setTareas(tareas.map((tarea) => tarea.id === id ? {...tarea, terminada: !tarea.terminada }: tarea ))
   }
   //Los componentes se crean siempre con mayuscula la primera letra
@@ -47,7 +53,9 @@ function App() {
     </>*/
     <div className="container">
       <Header titulo='Administrador de Tareas' />
+      <AddTarea onAdd={addTarea} />
       {tareas.length > 0 ? (<Tareas tareas={tareas} onDelete={deleteTarea}  onToggle={toggleTerminado}/>) : ('No hay Tareas para mostrar')}
+      
     </div>
     )
 }

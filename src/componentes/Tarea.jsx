@@ -18,4 +18,3 @@ const Tarea = ({ tarea, onDelete, onToggle }) => {
 export default Tarea
 
 
-//minuto 1:42:02
