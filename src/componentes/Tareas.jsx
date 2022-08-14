@@ -3,7 +3,7 @@
 //Se importa el componente tarea
 import Tarea from "./Tarea"
 
-const Tareas = ({ tareas, onDelete }) => {
+const Tareas = ({ tareas, onDelete, onToggle }) => {
 
   return (
     //En palabras sencillas, al utilizar map(), podremos convertir un array en uno nuevo, 
@@ -11,7 +11,7 @@ const Tareas = ({ tareas, onDelete }) => {
     //efectuada por la función que se utilice en este proceso.
     <>
       {tareas.map((tarea) => (
-        <Tarea key={tarea.id} tarea={tarea} onDelete={onDelete} />
+        <Tarea key={tarea.id} tarea={tarea} onDelete={onDelete} onToggle={onToggle}/>
       ))}
     </>
     //Al componente Tarea se le envia una variable llamada 

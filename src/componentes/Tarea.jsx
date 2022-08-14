@@ -2,7 +2,7 @@
 //Aqui se importa el icono que queremos y desde la carpeta de react icons y la carpeta de ese icono
 import { FaTimes } from 'react-icons/fa'
 
-const Tarea = ({ tarea, onDelete }) => {
+const Tarea = ({ tarea, onDelete, onToggle }) => {
     return (
         //Se le asigna al icono la funcion onDelete mediante un onClick
         //Y se le pasa a la funcion onDelete el atributo id

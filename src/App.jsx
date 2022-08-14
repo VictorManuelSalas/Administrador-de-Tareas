@@ -28,10 +28,14 @@ function App() {
   //Funcion para eliminar una tarea al dar clic a la x
   //Esta funicon obtiene el valor de id
   const deleteTarea = (id) => {
-    //Esto es porque no se puede leiminar datos que nosotros tenemos en el code 
+    //Esto es porque no se puede eliminar datos que nosotros tenemos en el code 
     setTareas(tareas.filter((tarea) => tarea.id !== id))
   }//Esto va filtrar las tareas que son diferentes al id que se ando
 
+  //Toggle terminado
+  const toggleTerminado = (id) => {
+
+  }
   //Los componentes se crean siempre con mayuscula la primera letra
   return (
     //Aqui se agragaran todos los componentes para que se muestren en la pagina
@@ -42,7 +46,7 @@ function App() {
     </>*/
     <div className="container">
       <Header titulo='Administrador de Tareas' />
-      {tareas.length > 0 ? (<Tareas tareas={tareas} onDelete={deleteTarea}  />) : ('No hay Tareas para mostrar')}
+      {tareas.length > 0 ? (<Tareas tareas={tareas} onDelete={deleteTarea}  onToggle={toggleTerminado}/>) : ('No hay Tareas para mostrar')}
     </div>
     )
 }
