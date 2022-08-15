@@ -34,8 +34,9 @@
 ## Este proyecto se realizo como practica para aprender React.
 <p> El adminsitrador le permite al usuario crear una nueva tarea pidiendo el nombre, fecha y estatus. 
 De igual manera se puede seleccionar las tareas y ponerlas en realizadas y tambien eliminar alguna de ellas.</p>
-
+<div align='center' >
 <img align='center' src="https://github.com/VictorManuelSalas/Administrador-de-Tareas/blob/main/img/inicio.PNG" width="500" hight="100" />
+</div>
 <br>
 - Agregar Tarea
 <img align='center' src="https://github.com/VictorManuelSalas/Administrador-de-Tareas/blob/main/img/agreagrtarea.PNG" width="500" hight="100" />
@@ -47,5 +48,7 @@ De igual manera se puede seleccionar las tareas y ponerlas en realizadas y tambi
 <img align='center' src="https://github.com/VictorManuelSalas/Administrador-de-Tareas/blob/main/img/fin.PNG" width="500" hight="100" />
 
 <br>
+
+---
 
 <p>Si quieres descargar y ejecutar este codigo, es necesario que instales las carpetas correspondientes primero deberas tener instalado node.js y ejecutar el comando 'npm install' en la carpeta del proyecto. Luego para correr el localhost se usa el comando 'npm run dev'</p>
