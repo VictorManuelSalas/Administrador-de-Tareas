@@ -35,14 +35,17 @@
 <p> El adminsitrador le permite al usuario crear una nueva tarea pidiendo el nombre, fecha y estatus. 
 De igual manera se puede seleccionar las tareas y ponerlas en realizadas y tambien eliminar alguna de ellas.</p>
 
-<img align='center' src="https://github.com/AmySRGreen/Hack2022/blob/demo/picture/todos.jpeg" width="500" hight="100" />
+<img align='center' src="https://github.com/VictorManuelSalas/Administrador-de-Tareas/blob/main/img/inicio.PNG" width="500" hight="100" />
 <br>
-**Turisteando** es una ✨ _App Web_ ✨ el cual consta  de un proyecto realizado por 5 integrantes del equipo el cual consta de 4 ingenieros y 1 matematico los cuales realizaron ideas muy interesantes para la solucion de la problematica planteada en este Hackaton 2022. Este proyecto se esta reprensentando por los participantes por parte de la Universidad Politecnica de Gomez Palacio.
+- Agregar Tarea
+<img align='center' src="https://github.com/VictorManuelSalas/Administrador-de-Tareas/blob/main/img/agreagrtarea.PNG" width="500" hight="100" />
 <br>
+- Mostar Tareas
+<img align='center' src="https://github.com/VictorManuelSalas/Administrador-de-Tareas/blob/main/img/agregados.PNG" width="500" hight="100" />
 <br>
+-Tareas Realizadas
+<img align='center' src="https://github.com/VictorManuelSalas/Administrador-de-Tareas/blob/main/img/fin.PNG" width="500" hight="100" />
+
 <br>
-<div margin='10rem'>
-<img align='left' src="https://github.com/AmySRGreen/Hack2022/blob/demo/picture/integrantes.jpeg"  width="400" />
-<img align='right' src="https://github.com/AmySRGreen/Hack2022/blob/demo/picture/integrantes%20(2).jpeg" width="400" /> 
-</div>
-<br>
+
+<p>Si quieres descargar y ejecutar este codigo, es necesario que instales las carpetas correspondientes primero deberas tener instalado node.js y ejecutar el comando 'npm install' en la carpeta del proyecto. Luego para correr el localhost se usa el comando 'npm run dev'</p>
